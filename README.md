@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Travel Diary
+
+A simple app with 10 beautiful cities around the world. Click on the pictures to find out two facts about them and 5 top tourist attractions.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

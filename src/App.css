@@ -2,37 +2,83 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* .city-grid {
+  display: grid;
+  overflow: auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+} */
+
+.carousel-item img {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.city img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.carousel-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.carousel {
+  width: 90%;
+  min-width: 1200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel-item img {
+  display: inline-block;
+  /* width: calc(100% / 3); */
+  margin-right: 15px;
+  width: 500px;
+  height: auto;
+}
+
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
+
+
+.city .name {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 680px;
+}
+
+/* .header h2 {
+  margin-right: 10px;
+} */
+
+.close-button {
+  margin-left: auto;
+  cursor: pointer;
+  margin-right: 3500px;
+}
+
+.carousel-inner{
+  display: flex;
+  height: 500px;
+  overflow: scroll;
+  flex-flow: row;
+  min-width: 1200px;
+}
+.carousel-control-next,.carousel-control-prev,.carousel-indicators{
+  display: none;
 }
